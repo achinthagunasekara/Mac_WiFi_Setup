@@ -13,7 +13,7 @@ sleep 2
  
 if networksetup -getairportnetwork $AIRPORT | grep -i -a $WIFI_NETWORK_NAME ;
 then
-    echo 'Connected!';
+    echo 'Connected to wireless network $WIFI_NETWORK_NAME successfully!';
     exit 0
 fi
  
