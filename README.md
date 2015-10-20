@@ -1,6 +1,6 @@
 #Mac Wi-Fi Setup Script
 
-Archie Gunasekara
+Achintha Gunasekara
 
 2015-05-20
 
