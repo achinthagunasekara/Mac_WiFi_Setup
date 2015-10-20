@@ -1,5 +1,5 @@
 #!/bin/bash
-# Archie Gunasekara
+# Achintha Gunasekara
 # 2015-05-20
 # Script to Setup Wifi Network on a give SSID
 
