@@ -13,7 +13,8 @@ networksetup -setairportpower $AIRPORT off
 echo 'Turning on $AIRPORT'
 networksetup -setairportpower $AIRPORT on
 sleep 2
- 
+
+echo 'Connecting to $WIFI_NETWORK_NAME...'
 if networksetup -getairportnetwork $AIRPORT | grep -i -a $WIFI_NETWORK_NAME ;
 then
     echo 'Connected to wireless network $WIFI_NETWORK_NAME successfully!';
