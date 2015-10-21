@@ -8,6 +8,7 @@ WIFI_PASSWORD="Wireless Password"
 
 AIRPORT=$(networksetup -listallhardwareports |grep -A1 "Wi-Fi" |grep -v "Wi-Fi" |sed 's/.* //')
 echo 'Airport is $AIRPORT'
+echo 'Turning off $AIRPORT'
 networksetup -setairportpower $AIRPORT off
 networksetup -setairportpower $AIRPORT on
 sleep 2
