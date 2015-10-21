@@ -10,6 +10,7 @@ AIRPORT=$(networksetup -listallhardwareports |grep -A1 "Wi-Fi" |grep -v "Wi-Fi" 
 echo 'Airport is $AIRPORT'
 echo 'Turning off $AIRPORT'
 networksetup -setairportpower $AIRPORT off
+echo 'Turning on $AIRPORT'
 networksetup -setairportpower $AIRPORT on
 sleep 2
  
