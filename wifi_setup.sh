@@ -19,7 +19,7 @@ fi
  
 if networksetup -setairportnetwork $AIRPORT $WIFI_NETWORK_NAME $WIFI_PASSWORD | grep -i -a "Failed" ;
 then
-    echo 'Failed to connect, just restarting...';
+    echo 'Failed to connect to $WIFI_NETWORK_NAME, just restarting...';
     networksetup -setairportpower $AIRPORT off
     networksetup -setairportpower $AIRPORT on
     sleep 1
